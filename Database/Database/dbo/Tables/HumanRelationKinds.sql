@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [dbo].[HumanRelationKinds]
 (
-	[Id] INT NOT NULL PRIMARY KEY, 
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
     [Name] NVARCHAR(128) NOT NULL
 )

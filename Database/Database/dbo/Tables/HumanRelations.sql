@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[HumanRelations]
 (
-	[Id] INT NOT NULL PRIMARY KEY, 
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
     [RelationKind] INT NOT NULL, 
     [PersonId] INT NOT NULL, 
     [RelatedPersonId] INT NOT NULL, 
