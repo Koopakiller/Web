@@ -63,5 +63,14 @@
   <ItemGroup>
     <Build Include="dbo\Tables\Users.sql" />
     <Build Include="dbo\Tables\Persons.sql" />
+    <Build Include="dbo\Tables\Humans.sql" />
+    <Build Include="dbo\Tables\HumanRelations.sql" />
+    <Build Include="dbo\Tables\HumanRelationKinds.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Database.Debug.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Database.refactorlog" />
   </ItemGroup>
 </Project>
