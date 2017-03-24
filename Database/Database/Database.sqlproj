@@ -66,6 +66,8 @@
     <Build Include="dbo\Tables\Humans.sql" />
     <Build Include="dbo\Tables\HumanRelations.sql" />
     <Build Include="dbo\Tables\HumanRelationKinds.sql" />
+    <Build Include="dbo\Tables\Currencies.sql" />
+    <Build Include="dbo\Tables\CurrencyIdentifier.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Web.Database.Debug.publish.xml" />
