@@ -28,7 +28,12 @@ namespace DatabaseExplorer.Models
         }
     
     
-        public virtual int DbExplorer_GetAssociatedDataSets(string tableName, string columnName, Nullable<int> id)
+        public virtual ObjectResult<DbExplorer_GetTablesAndColumns_Result> DbExplorer_GetTablesAndColumns()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<DbExplorer_GetTablesAndColumns_Result>("DbExplorer_GetTablesAndColumns");
+        }
+    
+        public virtual ObjectResult<DbExplorer_GetAssociatedDataSets_Result> DbExplorer_GetAssociatedDataSets(string tableName, string columnName, Nullable<int> id)
         {
             var tableNameParameter = tableName != null ?
                 new ObjectParameter("tableName", tableName) :
@@ -42,12 +47,7 @@ namespace DatabaseExplorer.Models
                 new ObjectParameter("id", id) :
                 new ObjectParameter("id", typeof(int));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("DbExplorer_GetAssociatedDataSets", tableNameParameter, columnNameParameter, idParameter);
-        }
-    
-        public virtual ObjectResult<DbExplorer_GetTablesAndColumns_Result> DbExplorer_GetTablesAndColumns()
-        {
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<DbExplorer_GetTablesAndColumns_Result>("DbExplorer_GetTablesAndColumns");
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<DbExplorer_GetAssociatedDataSets_Result>("DbExplorer_GetAssociatedDataSets", tableNameParameter, columnNameParameter, idParameter);
         }
     }
 }

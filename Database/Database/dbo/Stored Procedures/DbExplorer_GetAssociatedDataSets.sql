@@ -5,6 +5,9 @@
 AS
 BEGIN
 
+	SET NOCOUNT ON
+	SET FMTONLY OFF
+
 	SELECT [table].[name]            AS [SourceTableName]
 		 , colFK.[name]              AS [SourceTableColumn]
 		 , [reftable].[name]         AS [TargetTableName]
@@ -74,4 +77,8 @@ BEGIN
 	SELECT * FROM #result
 
 	DROP TABLE #result
+		
+	SET NOCOUNT OFF
+	SET FMTONLY ON
+
 END
