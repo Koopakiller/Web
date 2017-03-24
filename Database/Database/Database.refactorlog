@@ -28,4 +28,25 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="ParentEntryId" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="3002f7ec-bb66-4efb-93c0-5d7e9aa0d614" ChangeDateTime="03/24/2017 01:13:40">
+    <Property Name="ElementName" Value="[dbo].[HumanGroupEntries].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[HumanGroupEntries]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="HumanId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="67ccefe2-c3f3-4900-a496-a3611c17ea9d" ChangeDateTime="03/24/2017 01:13:43">
+    <Property Name="ElementName" Value="[dbo].[HumanGroupEntries].[HumanId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[HumanGroupEntries]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="GroupId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2c6ae579-c74e-45cf-b999-d9ffe7b1a9a3" ChangeDateTime="03/24/2017 01:13:48">
+    <Property Name="ElementName" Value="[dbo].[HumanGroupEntries].[manId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[HumanGroupEntries]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="HumanId" />
+  </Operation>
 </Operations>
