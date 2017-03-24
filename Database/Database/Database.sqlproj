@@ -69,6 +69,9 @@
     <Build Include="dbo\Tables\Currencies.sql" />
     <Build Include="dbo\Tables\CurrencyIdentifier.sql" />
     <Build Include="dbo\Tables\Places.sql" />
+    <Build Include="dbo\Tables\ResumeEntries.sql" />
+    <Build Include="dbo\Tables\ResumeEntryKinds.sql" />
+    <Build Include="dbo\Tables\Resumes.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Web.Database.Debug.publish.xml" />
