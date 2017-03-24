@@ -5,6 +5,6 @@ namespace DatabaseExplorer.Models
 {
     public class InitialDataModel
     {
-        public IList<String> TableColumns { get; set; }
+        public IList<Tuple<String, String, String>> TableColumns { get; set; }
     }
 }

@@ -168,6 +168,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DatabaseModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\DbExplorer_GetTablesAndColumns_Result.cs">
+      <DependentUpon>DatabaseModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\InitialDataModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

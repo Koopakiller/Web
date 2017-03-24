@@ -1,4 +1,7 @@
-﻿using System.Web.Mvc;
+﻿using System;
+using System.Linq;
+using System.Web.Mvc;
+using DatabaseExplorer.Models;
 
 namespace DatabaseExplorer.Controllers
 {
@@ -6,7 +9,17 @@ namespace DatabaseExplorer.Controllers
     {
         public ActionResult Index()
         {
-            return this.View();
+            var idm = new InitialDataModel();
+
+            var entities = new Entities();
+            idm.TableColumns = entities.DbExplorer_GetTablesAndColumns()
+                .Select(x => Tuple.Create(
+                    x.TableName,
+                    x.TableName,
+                    x.TableName + " | " + x.ColumnName))
+                .ToList();
+
+            return this.View(idm);
         }
     }
 }
