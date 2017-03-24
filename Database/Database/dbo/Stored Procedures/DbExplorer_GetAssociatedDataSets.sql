@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [dbo].[GetAssociatedDataSets]
+﻿CREATE PROCEDURE [dbo].[DbExplorer_GetAssociatedDataSets]
 	@tableName NVARCHAR(128),
 	@columnName NVARCHAR(128),
 	@id INT
