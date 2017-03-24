@@ -9,11 +9,3 @@ IF NOT EXISTS(SELECT * FROM [HumanRelationKinds] AS hrk WHERE hrk.[Name] = 'Fath
 BEGIN
 	INSERT INTO [HumanRelationKinds] ([Name]) VALUES ('Father')
 END
-IF NOT EXISTS(SELECT * FROM [HumanRelationKinds] AS hrk WHERE hrk.[Name] = 'Brother')
-BEGIN
-	INSERT INTO [HumanRelationKinds] ([Name]) VALUES ('Brother')
-END
-IF NOT EXISTS(SELECT * FROM [HumanRelationKinds] AS hrk WHERE hrk.[Name] = 'Sister')
-BEGIN
-	INSERT INTO [HumanRelationKinds] ([Name]) VALUES ('Sister')
-END
